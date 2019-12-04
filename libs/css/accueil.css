@@ -1,5 +1,38 @@
 body {
-    background: url("../../libs/img/banniere-header.jpg") no-repeat;
     margin: auto;
     padding: 0;
 }
+
+.fond-header {
+    background: url('../../libs/img/banniere-header.jpg') no-repeat, #CDDED2!important;
+    height: 400px;
+    background-size: cover;
+}
+.navbar-nav a {
+    font-size: 1.5em;
+    color: #94B52B!important;
+    text-shadow: 1px 1px 1px black;
+    
+}
+
+.navbar-nav a:hover {
+    color: #CDDED2!important;
+    text-decoration: underline;
+}
+
+.corps-index {
+    background-color: #cdded2;
+}
+
+.vignette {
+    border-radius: 20px;
+}
+
+.vignette img:hover {
+    opacity: 0.8;
+}
+
+footer {
+    background: #94B52B;
+}
+
