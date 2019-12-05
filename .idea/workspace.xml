@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="895a4824-3a11-474f-8025-46b1176ae215" name="Default Changelist" comment="" />
+    <list default="true" id="895a4824-3a11-474f-8025-46b1176ae215" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/libs/css/location.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/location.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/css/accueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/libs/css/accueil.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -34,9 +40,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/css" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\62014-55-02\Documents\GitHub\location-velo\libs\css" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="index.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/location-velo/index.html" useBuiltInWebServerPort="true">
@@ -68,6 +79,7 @@
       <workItem from="1575462789303" duration="618000" />
       <workItem from="1575463431468" duration="7304000" />
       <workItem from="1575471769261" duration="1155000" />
+      <workItem from="1575529987697" duration="14401000" />
     </task>
     <servers />
   </component>
@@ -99,13 +111,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="261" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575466019347" />
-    <state x="463" y="165" key="SettingsEditor" timestamp="1575467362840">
+    <state x="463" y="145" key="SettingsEditor" timestamp="1575542834544">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1575467362840" />
-    <state x="667" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1575463433294">
+    <state x="463" y="145" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1575542834544" />
+    <state x="667" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1575529991462">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575463433294" />
+    <state x="667" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575529991462" />
   </component>
 </project>

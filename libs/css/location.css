@@ -1,4 +1,4 @@
-
+/* CSS PAGE INDEX */
 body {
     margin: auto;
     padding: 0;
@@ -16,12 +16,13 @@ body {
     font-size: 1.5em;
     color: #94B52B!important;
     text-shadow: 1px 1px 1px black;
-    cursor: pointer;
+    
 }
 
 .navbar-nav a:hover, .nav a:hover {
     color: #CDDED2!important;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .carousel-caption {
@@ -36,7 +37,7 @@ body {
 }
 
 .btn-success {
-    background-color: #94B52B;
+   background-color: #94B52B;
     border-color: #cdded2;
 }
 
@@ -51,6 +52,8 @@ body {
 footer {
     background: #94B52B;
 }
+
+/* CSS PAGE LOCATION */
 
 
 
