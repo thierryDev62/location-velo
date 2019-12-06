@@ -27,13 +27,12 @@
 <!-- HEADER -->
 <header class="container-fluid">
     <div class="row fond-header">
-        <div class="col text-right">
-            <img src="libs/img/logo.png" class="img-fluid">
+        <div class="col text-right mt-5 mb-5">
+            <a class="nav-link" href="index.html"><img src="libs/img/logo.png" alt="Logo du site" class="img-fluid"></a>
         </div>
         <div class="col">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
@@ -43,17 +42,17 @@
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
                                 Connexion
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu">
                                 <a class="dropdown-item" data-toggle="modal" data-target="#connexion">Déja client ?</a>
-                                <a class="dropdown-item" href="#">S'inscrire</a>
+                                <a class="dropdown-item" data-toggle="modal" data-target="#inscription">S'inscrire</a>
 
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="libs/img/panier.png" alt="icone panier"/> - 0</a>
+                            <a class="nav-link" data-toggle="modal" data-target="#panier"><img src="libs/img/panier.png" alt="icone panier"/> - 0</a>
                         </li>
                     </ul>
                 </div>
@@ -64,7 +63,7 @@
 
 <!-- SLIDER -->
 
-<section class="container mt-5">
+<section class="container">
     <div class="row justify-content-center px-0">
             <div id="carouselId" class="carousel slide w-75" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -96,14 +95,13 @@
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon"></span>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon"></span>
                     <span class="sr-only">Next</span>
                 </a>
-
         </div>
     </div>
 </section>
@@ -143,7 +141,7 @@
                 <a class="nav-link active" data-toggle="modal" data-target="#contactModal">Contact</a>
                 <a class="nav-link" data-toggle="modal" data-target="#mentionsLegales">Mentions légales</a>
                 <a class="nav-link" data-toggle="modal" data-target="#cgv">C.G.V.</a>
-                <a class="nav-link" href="#">Suivez-nous <img src="libs/img/facebook.png" alt="Icone Facebook"/></a>
+                <a class="nav-link" href="https://facebook.com" target="_blank">Suivez-nous <img src="libs/img/facebook.png" alt="Icone Facebook"/></a>
             </nav>
         </div>
     </div>
@@ -151,13 +149,13 @@
 
 <!-- Modal Conditions d'utilisation -->
 
-<div class="modal fade" id="cgv" tabindex="-1" role="dialog" aria-labelledby="titreConditions" aria-hidden="true">
+<div class="modal fade" id="cgv" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-dialog-scrollable" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="titreConditions">Conditions Générales de Vente</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
                 </button>
             </div>
             <div class="modal-body">
@@ -175,13 +173,13 @@
 
 <!-- Modal Mentions Légales -->
 
-<div class="modal fade" id="mentionsLegales" tabindex="-1" role="dialog" aria-labelledby="mentionsLegalesTitre" aria-hidden="true">
+<div class="modal fade" id="mentionsLegales" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="mentionsLegalesTitre">Mentions Légales</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
                 </button>
             </div>
             <div class="modal-body">
@@ -198,28 +196,27 @@
 
 <!-- Modal contact -->
 
-<div class="modal fade" id="contactModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="contactModal" data-backdrop="static" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="staticBackdropLabel">Contact</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <form method="POST" action="#">
                     <div class="form-group">
                         <label for="emailUtilisateur">Email</label>
-                        <input type="email" class="form-control" id="emailUtilisateur" aria-describedby="emailAide">
-                        <small id="emailAide" class="form-text text-muted">Votre email ne sera pas partagée.</small>
+                        <input type="email" class="form-control" id="emailUtilisateur">
+                        <small id="emailAide" class="form-text text-muted">Votre adresse email ne sera pas partagée.</small>
                     </div>
                     <div class="form-group">
                         <label for="message">Votre message</label><br>
-                        <textarea name="message" id="message" cols="31" rows="10"></textarea>
+
+                        <textarea class="form-control" id="message" rows="3"></textarea>
                     </div>
-
-
                 </form>
             </div>
             <div class="modal-footer">
@@ -231,20 +228,20 @@
 </div>
 
 <!-- Modal connexion -->
-<div class="modal fade" id="connexion" tabindex="-1" role="dialog" aria-labelledby="connexionTitre" aria-hidden="true">
+<div class="modal fade" id="connexion" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="connexionTitre">Connexion</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <form method="POST" action="#">
                     <div class="form-group">
                         <label for="nomUtilisateur">Utilisateur / Email*</label>
-                        <input type="text" class="form-control" id="nomUtilisateur" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="nomUtilisateur">
 
                     </div>
                     <div class="form-group">
@@ -265,33 +262,77 @@
 </div>
 
 <!-- Modal Inscription -->
-<div class="modal fade" id="inscription" tabindex="-1" role="dialog" aria-labelledby="inscriptionTitre" aria-hidden="true">
+<div class="modal fade" id="inscription" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="inscriptionTitre">Connexion</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                <h5 class="modal-title" id="inscriptionTitre">Inscription</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <form method="POST" action="#">
                     <div class="form-group">
-                        <label for="nomUtilisateur">Utilisateur / Email*</label>
-                        <input type="text" class="form-control" id="nomUtilisateur" aria-describedby="emailHelp">
+                        <label for="nomInscription">Nom*</label>
+                        <input type="text" class="form-control" id="nomInscription" placeholder="Votre nom">
+                    </div>
 
-                    </div>
                     <div class="form-group">
-                        <label for="motDePasse">Mot de Passe*</label>
-                        <input type="password" class="form-control" id="motDePasse">
+                        <label for="prenomInscription">Prénom*</label>
+                        <input type="text" class="form-control" id="prenomInscription" placeholder="Votre prénom">
                     </div>
-                    <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
+
+                    <div class="form-group">
+                        <label for="emailInscription">Email*</label>
+                        <input type="email" class="form-control" id="emailInscription" placeholder="Votre email">
                     </div>
+
+                    <div class="form-group">
+                        <label for="adresseInscription">Adresse*</label>
+                        <input type="text" class="form-control" id="adresseInscription" placeholder="Votre adresse">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="codePostal">Code postal*</label>
+                        <input type="text" class="form-control" id="codePostal" placeholder="Votre code postal">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="villeInscription">Ville*</label>
+                        <input type="text" class="form-control" id="villeInscription" placeholder="Votre ville">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telInscription">Téléphone*</label>
+                        <input type="text" class="form-control" id="telInscription" placeholder="Votre numéro de téléphone">
+                    </div>
+
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
                     <button type="submit" class="btn btn-success">Envoyer</button>
-                    <small id="passeOublie" class="form-text text-muted"><a href="#">Mot de passe oublié ?</a></small>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal panier -->
+<div class="modal fade" id="panier" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Récapitulatif de votre commande</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Votre panier est vide...</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                <form method="POST" action="paiement.html">
+                <button type="submit" class="btn btn-success">Valider votre panier</button>
                 </form>
             </div>
         </div>
@@ -299,6 +340,7 @@
 </div>
 
 
+<!--TODO ajouter les attributs name aux formulaires -  Page paiement-->
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
