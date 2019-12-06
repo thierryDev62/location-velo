@@ -18,13 +18,12 @@ section {
 .navbar-nav a, .nav a {
     font-size: 1.5em;
     color: #94B52B!important;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 2px 2px 5px black;
     cursor: pointer;
 }
 
 .navbar-nav a:hover, .nav a:hover {
     color: #CDDED2!important;
-    text-decoration: underline;
 }
 
 .navbar-nav a:active, .nav a:active {
@@ -32,8 +31,16 @@ section {
 
 }
 
+.dropdown-menu a {
+    color: black!important;
+}
+
 .bg-dark {
     background-color: rgba(0,0,0,0.8)!important;
+}
+
+.shadow {
+    box-shadow: 4px 4px 5px rgba(6,6,6,0.8)!important;
 }
 
 .carousel-caption {
@@ -60,8 +67,16 @@ section {
     border-radius: 20px;
 }
 
+.vignette img {
+    border-radius: 20px 20px 0 0;
+}
+
 footer {
     background: #94B52B;
+}
+
+footer .nav-link {
+    color: black!important;
 }
 
 @media (max-width: 576px) {
@@ -70,8 +85,6 @@ footer {
         background-color: #94B52B!important;
         color: white!important;
         flex-direction: column;
-
-        /* Pas de background pour les petites résolutions notamment sur les mobiles*/
     }
 
     .navbar-nav a, .nav a {
