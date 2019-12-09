@@ -29,7 +29,7 @@
     <header class="container-fluid">
         <div class="row fond-header">
             <div class="col text-right mt-5 mb-5">
-                <a class="nav-link" href="../index.html"><img src="../libs/img/logo.png" class="img-fluid"></a>
+                <a class="nav-link" href="../index.html"><img src="../libs/img/logo.png" alt="Logo du site" class="img-fluid"></a>
             </div>
             <div class="col">
                 <nav class="navbar navbar-expand-lg navbar-light">
@@ -151,6 +151,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success" data-dismiss="modal">Fermer</button>
+
                 </div>
             </div>
         </div>
@@ -171,14 +172,14 @@
                     <form method="POST" action="#">
                         <div class="form-group">
                             <label for="emailUtilisateur">Email</label>
-                            <input type="email" class="form-control" id="emailUtilisateur">
+                            <input type="email" name="emailUtilisateur" class="form-control" id="emailUtilisateur">
                             <small id="emailAide" class="form-text text-muted">Votre adresse email ne sera pas
                                 partagée.</small>
                         </div>
                         <div class="form-group">
-                            <label for="message">Votre message</label><br>
+                            <label for="messageContact">Votre message</label><br>
 
-                            <textarea class="form-control" id="message" rows="3"></textarea>
+                            <textarea class="form-control" name="messageContact" id="messageContact" rows="3"></textarea>
                         </div>
                     </form>
                 </div>
@@ -204,21 +205,21 @@
                     <form method="POST" action="#">
                         <div class="form-group">
                             <label for="nomUtilisateur">Utilisateur / Email</label>
-                            <input type="text" class="form-control" required id="nomUtilisateur">
+                            <input type="text" class="form-control" name="nomUtilisateur" required id="nomUtilisateur">
 
                         </div>
                         <div class="form-group">
-                            <label for="motDePasse">Mot de Passe</label>
-                            <input type="password" class="form-control" required id="motDePasse">
+                            <label for="motDePasseConnexion">Mot de Passe</label>
+                            <input type="password" class="form-control" name="motDePasseConnexion" required id="motDePasseConnexion">
                         </div>
                         <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
+                            <input type="checkbox" name="souvenirMotDePasse" class="form-check-input" id="souvenirMotDePasse">
+                            <label class="form-check-label" for="souvenirMotDePasse">Se souvenir de moi</label>
                         </div>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
                         <button type="submit" class="btn btn-success">Envoyer</button>
                         <small id="passeOublie" class="form-text text-muted"><a href="#">Mot de passe oublié
-                                ?</a></small>
+                            ?</a></small>
                     </form>
                 </div>
             </div>
@@ -239,44 +240,44 @@
                     <form method="POST" action="#">
                         <div class="form-group">
                             <label for="nomInscription">Nom</label>
-                            <input type="text" class="form-control" id="nomInscription" required
-                                placeholder="Votre nom">
+                            <input type="text" class="form-control" name="nomInscription" id="nomInscription" required
+                                   placeholder="Votre nom">
                         </div>
 
                         <div class="form-group">
                             <label for="prenomInscription">Prénom</label>
-                            <input type="text" class="form-control" id="prenomInscription" required
-                                placeholder="Votre prénom">
+                            <input type="text" class="form-control" name="prenomInscription" id="prenomInscription" required
+                                   placeholder="Votre prénom">
                         </div>
 
                         <div class="form-group">
                             <label for="emailInscription">Email</label>
-                            <input type="email" class="form-control" id="emailInscription" required
-                                placeholder="Votre email">
+                            <input type="email" class="form-control" name="emailInscription" id="emailInscription" required
+                                   placeholder="Votre email">
                         </div>
 
                         <div class="form-group">
                             <label for="adresseInscription">Adresse</label>
-                            <input type="text" class="form-control" id="adresseInscription" required
-                                placeholder="Votre adresse">
+                            <input type="text" class="form-control" name="adresseInscription" id="adresseInscription" required
+                                   placeholder="Votre adresse">
                         </div>
 
                         <div class="form-group">
-                            <label for="codePostal">Code postal</label>
-                            <input type="text" class="form-control" id="codePostal" required
-                                placeholder="Votre code postal">
+                            <label for="codePostalInscription">Code postal</label>
+                            <input type="text" class="form-control" name="codePostalInscription" id="codePostalInscription" required
+                                   placeholder="Votre code postal">
                         </div>
 
                         <div class="form-group">
                             <label for="villeInscription">Ville</label>
-                            <input type="text" class="form-control" id="villeInscription" required
-                                placeholder="Votre ville">
+                            <input type="text" class="form-control" name="villeInscription" id="villeInscription" required
+                                   placeholder="Votre ville">
                         </div>
 
                         <div class="form-group">
                             <label for="telInscription">Téléphone</label>
-                            <input type="text" class="form-control" required id="telInscription"
-                                placeholder="Votre numéro de téléphone">
+                            <input type="text" class="form-control" name="telInscription" required id="telInscription"
+                                   placeholder="Votre numéro de téléphone">
                         </div>
                         <p>Tous les champs sont obligatoires</p>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
@@ -301,8 +302,8 @@
                     <p>Votre panier est vide...</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
                     <form method="POST" action="../templates/paiement.html">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
                         <button type="submit" class="btn btn-success">Valider votre panier</button>
                     </form>
                 </div>
