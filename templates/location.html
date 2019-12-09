@@ -2,14 +2,14 @@
 <html lang="fr">
 
 <head>
-    <title>Location de vélo</title>
+    <title>Espace location</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- CSS -->
     <link rel="stylesheet" href="../libs/css/accueil.css">
@@ -25,276 +25,303 @@
 
 <body>
 
-<!-- HEADER -->
-<header class="container-fluid">
-    <div class="row fond-header">
-        <div class="col text-right mt-5 mb-5">
-            <a class="nav-link" href="../index.html"><img src="../libs/img/logo.png" class="img-fluid"></a>
+    <!-- HEADER -->
+    <header class="container-fluid">
+        <div class="row fond-header">
+            <div class="col text-right mt-5 mb-5">
+                <a class="nav-link" href="../index.html"><img src="../libs/img/logo.png" class="img-fluid"></a>
+            </div>
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavDropdown">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../index.html">Accueil <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown">
+                                    Connexion
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" data-toggle="modal" data-target="#connexion">Déja client
+                                        ?</a>
+                                    <a class="dropdown-item" data-toggle="modal"
+                                        data-target="#inscription">S'inscrire</a>
+
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="modal" data-target="#panier"><img
+                                        src="../libs/img/panier.png" alt="icone panier" /> - 0</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
-        <div class="col">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="../index.html">Accueil <span class="sr-only">(current)</span></a>
-                        </li>
+    </header>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                                Connexion
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" data-toggle="modal" data-target="#connexion">Déja client ?</a>
-                                <a class="dropdown-item" data-toggle="modal" data-target="#inscription">S'inscrire</a>
+    <!-- Corps -->
 
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="modal" data-target="#panier"><img src="../libs/img/panier.png" alt="icone panier"/> - 0</a>
-                        </li>
-                    </ul>
+    <section class="container-fluid">
+        <div class="row justify-content-center">
+            <h2>LOUEZ VOTRE VELO EN QUELQUES CLICS !</h2>
+        </div>
+        <div class="row justify-content-center">
+            <p>1ère étape - Veuillez choisir une borne</p>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+
+            <img src="../libs/img/map-lille.jpg" alt="carte exemple de Lille" /></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <nav class="nav justify-content-center">
+                    <a class="nav-link active" data-toggle="modal" data-target="#contactModal">Contact</a>
+                    <a class="nav-link" data-toggle="modal" data-target="#mentionsLegales">Mentions légales</a>
+                    <a class="nav-link" data-toggle="modal" data-target="#cgv">C.G.V.</a>
+                    <a class="nav-link" href="https://facebook.com" target="_blank">Suivez-nous <img
+                            src="../libs/img/facebook.png" alt="Icone Facebook" /></a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Conditions d'utilisation -->
+
+    <div class="modal fade" id="cgv" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titreConditions">Conditions Générales de Vente</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
                 </div>
-            </nav>
-        </div>
-    </div>
-</header>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis doloremque eaque iste, iure
+                        natus numquam placeat porro, quibusdam quisquam sequi similique totam voluptatem. Alias
+                        cupiditate ex magnam, nihil ullam voluptate.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aliquam aspernatur beatae
+                        consequatur culpa error est in laborum, quis quo, reprehenderit sint totam unde vel. Culpa
+                        cupiditate quaerat tempore.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aliquam aspernatur beatae
+                        consequatur culpa error est in laborum, quis quo, reprehenderit sint totam unde vel. Culpa
+                        cupiditate quaerat tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                        ad aliquam aspernatur beatae consequatur culpa error est in laborum, quis quo, reprehenderit
+                        sint totam unde vel. Culpa cupiditate quaerat tempore.</p>
 
-<!-- Corps -->
-
-<section class="container-fluid">
-    <div class="row justify-content-center mt-3">
-        <h2>LOCATION</h2>
-    </div>
-    <div class="row justify-content-center">
-    <p>Veuillez choisir une borne</p>
-    </div>
-
-    <div class="row justify-content-center mb-3">
-
-        <img src="../libs/img/map-lille.jpg" alt="carte exemple de Lille"/></div>
-</section>
-
-<!-- FOOTER -->
-<footer class="container-fluid">
-    <div class="row">
-        <div class="col">
-            <nav class="nav justify-content-center">
-                <a class="nav-link active" data-toggle="modal" data-target="#contactModal">Contact</a>
-                <a class="nav-link" data-toggle="modal" data-target="#mentionsLegales">Mentions légales</a>
-                <a class="nav-link" data-toggle="modal" data-target="#cgv">C.G.V.</a>
-                <a class="nav-link" href="https://facebook.com" target="_blank">Suivez-nous <img src="../libs/img/facebook.png" alt="Icone Facebook"/></a>
-            </nav>
-        </div>
-    </div>
-</footer>
-
-<!-- Modal Conditions d'utilisation -->
-
-<div class="modal fade" id="cgv" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-dialog-scrollable" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="titreConditions">Conditions Générales de Vente</h5>
-                <button type="button" class="close" data-dismiss="modal">
-                    <span>&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis doloremque eaque iste, iure natus numquam placeat porro, quibusdam quisquam sequi similique totam voluptatem. Alias cupiditate ex magnam, nihil ullam voluptate.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aliquam aspernatur beatae consequatur culpa error est in laborum, quis quo, reprehenderit sint totam unde vel. Culpa cupiditate quaerat tempore.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aliquam aspernatur beatae consequatur culpa error est in laborum, quis quo, reprehenderit sint totam unde vel. Culpa cupiditate quaerat tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aliquam aspernatur beatae consequatur culpa error est in laborum, quis quo, reprehenderit sint totam unde vel. Culpa cupiditate quaerat tempore.</p>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-success" data-dismiss="modal">Fermer</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Fermer</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Modal Mentions Légales -->
+    <!-- Modal Mentions Légales -->
 
-<div class="modal fade" id="mentionsLegales" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="mentionsLegalesTitre">Mentions Légales</h5>
-                <button type="button" class="close" data-dismiss="modal">
-                    <span>&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at, cum eius eligendi, esse, illum impedit incidunt laborum magni obcaecati placeat quaerat quidem similique soluta veritatis? Cum laboriosam nostrum quas!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dicta error ex molestias nisi sed sit. Aliquam debitis dicta distinctio dolorum eos expedita explicabo fugiat, magni maiores praesentium rem sunt!</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-success" data-dismiss="modal">Fermer</button>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal contact -->
-
-<div class="modal fade" id="contactModal" data-backdrop="static" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Contact</h5>
-                <button type="button" class="close" data-dismiss="modal">
-                    <span>&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form method="POST" action="#">
-                    <div class="form-group">
-                        <label for="emailUtilisateur">Email</label>
-                        <input type="email" class="form-control" id="emailUtilisateur">
-                        <small id="emailAide" class="form-text text-muted">Votre adresse email ne sera pas partagée.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Votre message</label><br>
-
-                        <textarea class="form-control" id="message" rows="3"></textarea>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-                <button type="submit" class="btn btn-success">Envoyer</button>
+    <div class="modal fade" id="mentionsLegales" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mentionsLegalesTitre">Mentions Légales</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at, cum eius eligendi, esse,
+                        illum impedit incidunt laborum magni obcaecati placeat quaerat quidem similique soluta
+                        veritatis? Cum laboriosam nostrum quas!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dicta error ex molestias
+                        nisi sed sit. Aliquam debitis dicta distinctio dolorum eos expedita explicabo fugiat, magni
+                        maiores praesentium rem sunt!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Fermer</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Modal connexion -->
-<div class="modal fade" id="connexion" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="connexionTitre">Connexion</h5>
-                <button type="button" class="close" data-dismiss="modal">
-                    <span>&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form method="POST" action="#">
-                    <div class="form-group">
-                        <label for="nomUtilisateur">Utilisateur / Email*</label>
-                        <input type="text" class="form-control" id="nomUtilisateur">
+    <!-- Modal contact -->
 
-                    </div>
-                    <div class="form-group">
-                        <label for="motDePasse">Mot de Passe*</label>
-                        <input type="password" class="form-control" id="motDePasse">
-                    </div>
-                    <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
-                    </div>
+    <div class="modal fade" id="contactModal" data-backdrop="static" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Contact</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" action="#">
+                        <div class="form-group">
+                            <label for="emailUtilisateur">Email</label>
+                            <input type="email" class="form-control" id="emailUtilisateur">
+                            <small id="emailAide" class="form-text text-muted">Votre adresse email ne sera pas
+                                partagée.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Votre message</label><br>
+
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
                     <button type="submit" class="btn btn-success">Envoyer</button>
-                    <small id="passeOublie" class="form-text text-muted"><a href="#">Mot de passe oublié ?</a></small>
-                </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Modal Inscription -->
-<div class="modal fade" id="inscription" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="inscriptionTitre">Inscription</h5>
-                <button type="button" class="close" data-dismiss="modal">
-                    <span>&times;</span>
-                </button>
+    <!-- Modal connexion -->
+    <div class="modal fade" id="connexion" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="connexionTitre">Connexion</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" action="#">
+                        <div class="form-group">
+                            <label for="nomUtilisateur">Utilisateur / Email</label>
+                            <input type="text" class="form-control" required id="nomUtilisateur">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="motDePasse">Mot de Passe</label>
+                            <input type="password" class="form-control" required id="motDePasse">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
+                        </div>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                        <button type="submit" class="btn btn-success">Envoyer</button>
+                        <small id="passeOublie" class="form-text text-muted"><a href="#">Mot de passe oublié
+                                ?</a></small>
+                    </form>
+                </div>
             </div>
-            <div class="modal-body">
-                <form method="POST" action="#">
-                    <div class="form-group">
-                        <label for="nomInscription">Nom*</label>
-                        <input type="text" class="form-control" id="nomInscription" placeholder="Votre nom">
-                    </div>
+        </div>
+    </div>
 
-                    <div class="form-group">
-                        <label for="prenomInscription">Prénom*</label>
-                        <input type="text" class="form-control" id="prenomInscription" placeholder="Votre prénom">
-                    </div>
+    <!-- Modal Inscription -->
+    <div class="modal fade" id="inscription" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="inscriptionTitre">Inscription</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" action="#">
+                        <div class="form-group">
+                            <label for="nomInscription">Nom</label>
+                            <input type="text" class="form-control" id="nomInscription" required
+                                placeholder="Votre nom">
+                        </div>
 
-                    <div class="form-group">
-                        <label for="emailInscription">Email*</label>
-                        <input type="email" class="form-control" id="emailInscription" placeholder="Votre email">
-                    </div>
+                        <div class="form-group">
+                            <label for="prenomInscription">Prénom</label>
+                            <input type="text" class="form-control" id="prenomInscription" required
+                                placeholder="Votre prénom">
+                        </div>
 
-                    <div class="form-group">
-                        <label for="adresseInscription">Adresse*</label>
-                        <input type="text" class="form-control" id="adresseInscription" placeholder="Votre adresse">
-                    </div>
+                        <div class="form-group">
+                            <label for="emailInscription">Email</label>
+                            <input type="email" class="form-control" id="emailInscription" required
+                                placeholder="Votre email">
+                        </div>
 
-                    <div class="form-group">
-                        <label for="codePostal">Code postal*</label>
-                        <input type="text" class="form-control" id="codePostal" placeholder="Votre code postal">
-                    </div>
+                        <div class="form-group">
+                            <label for="adresseInscription">Adresse</label>
+                            <input type="text" class="form-control" id="adresseInscription" required
+                                placeholder="Votre adresse">
+                        </div>
 
-                    <div class="form-group">
-                        <label for="villeInscription">Ville*</label>
-                        <input type="text" class="form-control" id="villeInscription" placeholder="Votre ville">
-                    </div>
+                        <div class="form-group">
+                            <label for="codePostal">Code postal</label>
+                            <input type="text" class="form-control" id="codePostal" required
+                                placeholder="Votre code postal">
+                        </div>
 
-                    <div class="form-group">
-                        <label for="telInscription">Téléphone*</label>
-                        <input type="text" class="form-control" id="telInscription" placeholder="Votre numéro de téléphone">
-                    </div>
+                        <div class="form-group">
+                            <label for="villeInscription">Ville</label>
+                            <input type="text" class="form-control" id="villeInscription" required
+                                placeholder="Votre ville">
+                        </div>
 
+                        <div class="form-group">
+                            <label for="telInscription">Téléphone</label>
+                            <input type="text" class="form-control" required id="telInscription"
+                                placeholder="Votre numéro de téléphone">
+                        </div>
+                        <p>Tous les champs sont obligatoires</p>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                        <button type="submit" class="btn btn-success">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal panier -->
+    <div class="modal fade" id="panier" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Récapitulatif de votre commande</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Votre panier est vide...</p>
+                </div>
+                <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-                    <button type="submit" class="btn btn-success">Envoyer</button>
-                </form>
+                    <form method="POST" action="../templates/paiement.html">
+                        <button type="submit" class="btn btn-success">Valider votre panier</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<!-- Modal panier -->
-<div class="modal fade" id="panier" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Récapitulatif de votre commande</h5>
-                <button type="button" class="close" data-dismiss="modal">
-                    <span>&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>Votre panier est vide...</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-                <form method="POST" action="paiement.html">
-                    <button type="submit" class="btn btn-success">Valider votre panier</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
 
 
-<!--TODO ajouter les attributs name aux formulaires -  Page paiement-->
+    <!--TODO ajouter les attributs name aux formulaires -  Page paiement-->
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 </body>

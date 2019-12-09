@@ -1,0 +1,13 @@
+button {
+    color: black!important;
+    text-decoration: none!important;
+}
+
+button:hover {
+    text-decoration: none!important;
+    background-color: #CDDED2!important;
+}
+
+button:visited {
+    text-decoration: none!important;
+}
