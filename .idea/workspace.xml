@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="895a4824-3a11-474f-8025-46b1176ae215" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/location.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/location.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/paiement.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/paiement.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +81,7 @@
       <workItem from="1575549111385" duration="6148000" />
       <workItem from="1575615732449" duration="457000" />
       <workItem from="1575616397048" duration="10799000" />
-      <workItem from="1575875158926" duration="10277000" />
+      <workItem from="1575875158926" duration="11440000" />
     </task>
     <servers />
   </component>
@@ -100,6 +101,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="742" y="199" key="#index.html/0.0.1920.1040@0.0.1920.1040" timestamp="1575463296422" />
+    <state x="739" y="261" key="FileChooserDialogImpl" timestamp="1575896320894">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1575896320894" />
     <state width="1877" height="240" key="GridCell.Tab.0.bottom" timestamp="1575556555247">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
